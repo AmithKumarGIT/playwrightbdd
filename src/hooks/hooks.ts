@@ -24,10 +24,11 @@ BeforeAll(async function (){
 
 Before(async function ({ pickle}) {
     const scenarioName = pickle.name + pickle.id;
-    context = await browser.newContext();
+    context = await browser.newContext({
     recordVideo:{
-        dir: "test-results/videos"
-    }
+        dir: "test-results/videos",
+    },
+});
     const page = await context.newPage();
     pageFixture.page =page;
     pageFixture.logger = createLogger(optinons(scenarioName))

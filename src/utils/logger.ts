@@ -6,7 +6,7 @@ export function optinons(scenarioName: string){
        return{
         transports: [
             new transports.File({
-                filename: `test-reults/logs/${scenarioName}/log.log`,
+                filename: `test-results/logs/${scenarioName}/log.log`,
                 level: 'info',
                 format: format.combine(
                        format.timestamp({ format: 'MMM-DD-YYYY HH:MM:SS'}),

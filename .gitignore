@@ -3,7 +3,7 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-/test-result/
+test-result
 assets
 features
 @rerun.txt
